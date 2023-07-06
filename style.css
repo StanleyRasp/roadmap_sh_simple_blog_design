@@ -1,0 +1,45 @@
+html{
+    font-family: "Poppins", sans-serif;
+    background-color: #232830;
+    color: white;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 75px 200px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul{
+    display: flex;
+    gap: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a{
+    color: inherit;
+    text-decoration: inherit;
+    transition: all 0.1s;
+    padding: 5px 0;
+}
+
+.menu a:hover{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.menu a:active{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.menu ul li{
+    list-style-type: none;
+}
