@@ -1,0 +1,90 @@
+
+.categories-bar{
+    display: flex;
+    gap: 41px;
+    color: #909090;
+    font-family: "Recursive", sans-serif;
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 0;
+}
+
+.card-layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-decoration: inherit;
+    transition: color 0.075s;
+}
+
+.list-icon{
+    display: inline-block;
+    height: fit-content;
+}
+
+.card-layout:hover{
+    color: white;
+}
+
+.categories-bar .layouts-block{
+    display: flex;
+    gap: 13px;
+}
+
+.categories-bar .layouts-block i{
+    height: 24px;
+    width: 24px;
+}
+
+.category-list-wrapper{
+    display: block;
+    max-width: 100%;
+}
+
+.category-list-wrapper::after{
+    content: " ";
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    height: 100%;
+    top: -100%;
+    left: 90%;
+    background: var(--background-color);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--background-color) 100%);
+}
+
+.categories-list{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 36px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.categories-list::-webkit-scrollbar {
+    display: none;
+}
+
+.categories-list li{
+    list-style-type: none;
+    font-size: 27px;
+}
+
+.category{
+    color: inherit;
+    text-decoration: inherit;
+    transition: color 0.075s;
+}
+
+.category:hover{
+    color: white;
+}

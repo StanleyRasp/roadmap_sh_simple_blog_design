@@ -1,0 +1,13 @@
+.articles{
+    display: grid;
+    grid-auto-rows: 440px;
+}
+
+.grid-layout{
+    grid-template: 440px / repeat(3, 1fr);
+}
+
+.card{
+    max-width: 100%;
+    overflow: hidden;
+}
