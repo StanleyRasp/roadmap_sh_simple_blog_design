@@ -1,0 +1,46 @@
+footer{
+    margin-top: 160px;
+}
+
+footer .content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+footer .content-wrapper .left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+footer .content-wrapper .logo{
+    font-size: 30px;
+}
+
+footer button{
+    height: 34px;
+    border-radius: 5px;
+    background-color: #4699E0;
+    border: none;
+    color: white;
+    font-size: 19px;
+    font-family: "Source Sans 3", sans-serif;
+    padding: 0em .5em;
+    cursor: pointer;
+    transition: all .05s linear;
+}
+
+footer button:hover{
+    background-color: #3d85c4;
+}
+
+footer .right button{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+footer .right button i{
+    height: 19px;
+}
