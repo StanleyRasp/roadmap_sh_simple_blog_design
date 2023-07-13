@@ -1,6 +1,6 @@
-
 .categories-bar{
-    display: flex;
+    display: grid;
+    grid-template-columns: 80px 1fr;
     gap: 41px;
     color: #909090;
     font-family: "Recursive", sans-serif;
@@ -43,6 +43,7 @@
 .category-list-wrapper{
     display: block;
     max-width: 100%;
+    overflow:hidden;
 }
 
 .category-list-wrapper::after{
