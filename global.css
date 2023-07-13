@@ -20,6 +20,18 @@ body{
     padding: 75px var(--body-side-padding);
 }
 
+.divider{
+    display: block;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #4D4D4D;
+    position: absolute;
+    left: 0;
+}
+
 .disable-after::after{
     display: none !important; 
 }
