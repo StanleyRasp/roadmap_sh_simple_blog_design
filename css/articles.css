@@ -58,6 +58,7 @@
 
 .card .featured-image{
     border-radius: 25px;
+    object-fit: cover;
 }
 
 .meta-data{
