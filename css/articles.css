@@ -3,13 +3,6 @@
     margin-top: 110px;
 }
 
-.grid-layout{
-    display: grid;
-    grid-auto-rows: 440px;
-    grid-template: 440px / repeat(auto-fit, minmax(350px, 1fr));
-    gap: 35px;
-}
-
 .card{
     display: block;
     padding: 25px;
@@ -28,35 +21,27 @@
     transform: scale(105%) rotate(-1deg);
 }
 
-.card .content-wrapper{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card .main-data{
-    display: flex;
-    flex-direction: column;
-    overflow-y: hidden;
-}
-
 .card h3, .card p{
     margin: 0;
 }
 
-.card .main-data h3{
+.card h3{
     font-size: 19px;
     margin-top: 33px;
-    line-height: normal;
+    line-height: 1.5em;
+    max-height: 3em;
+    overflow: hidden;
 }
 
-.card .main-data p{
+.card p{
     margin-top: 13px;
-    line-height: normal;
+    line-height: 1.5em;
+    max-height: 4.5em;
+    overflow: hidden;
 }
 
 .card .featured-image{
+    height: 45%;
     border-radius: 25px;
     object-fit: cover;
 }
@@ -64,12 +49,67 @@
 .meta-data{
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin-top: auto;
     gap: 20px;
+}
+
+.meta-data p{
+    margin: 0;
 }
 
 .dot{
     --dot-size: 5px;
     width: var(--dot-size);
     height: var(--dot-size);
+}
+
+
+/* grid layout */
+.articles.grid-layout{
+    display: grid;
+    grid-auto-rows: 440px;
+    grid-template: 440px / repeat(auto-fit, minmax(350px, 1fr));
+    gap: 35px;
+}
+
+.articles.grid-layout .card .content-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.articles.grid-layout .card .main-data{
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+
+ /* list layout */
+.articles.list-layout{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.articles.list-layout .card .content-wrapper{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 3fr;
+    gap: 35px;
+}
+
+.articles.list-layout .article-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.articles.list-layout .meta-data{
+    padding-top: 10px;
+}
+
+.articles.list-layout .featured-image{
+    width: 100%;
+    height: 100%;
 }

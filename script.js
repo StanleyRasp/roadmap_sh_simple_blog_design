@@ -1,3 +1,4 @@
+// category list overflow fade behaviour
 const categoriesList = document.querySelector(".categories-list")
 const categoryListWrapper = document.querySelector(".category-list-wrapper")
 
@@ -16,4 +17,24 @@ categoriesList.addEventListener("scroll", event => {
         }
     }
     
+})
+
+
+// layout selection
+const gridLayoutButton = document.querySelector(".card-layout.grid-layout");
+const listLayoutButton = document.querySelector(".card-layout.list-layout");
+
+const articlesGrid = document.querySelector(".articles.grid-layout");
+const articlesList = document.querySelector(".articles.list-layout");
+
+articlesList.style.display = "none"
+
+gridLayoutButton.addEventListener("click", event => {
+    articlesGrid.style.display = "grid"
+    articlesList.style.display = "none"
+})
+
+listLayoutButton.addEventListener("click", event => {
+    articlesGrid.style.display = "none"
+    articlesList.style.display = "flex"
 })
