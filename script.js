@@ -7,7 +7,7 @@ categoriesList.addEventListener("scroll", event => {
         categoryListWrapper.classList.add("hide-fade")
         setTimeout(() => {
             categoryListWrapper.classList.add("disable-after")
-        }, 500);
+        }, 200);
     } else{
         if (categoryListWrapper.classList.contains("disable-after")){
             categoryListWrapper.classList.remove("disable-after")

@@ -1,3 +1,22 @@
+@keyframes hide-fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes show-fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.show-fade::after{
+    animation: show-fade 0.2s;
+}
+
+.hide-fade::after{
+    animation: hide-fade 0.2s;
+}
+
+
 .categories-bar{
     display: grid;
     grid-template-columns: 80px 1fr;
@@ -80,12 +99,12 @@
     font-size: 27px;
 }
 
-.category{
+.categories-list .category{
     color: inherit;
     text-decoration: inherit;
     transition: color 0.075s;
 }
 
-.category:hover{
+.categories-list .category:hover{
     color: white;
 }
