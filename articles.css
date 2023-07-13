@@ -1,13 +1,74 @@
 .articles{
-    display: grid;
-    grid-auto-rows: 440px;
+    display: block;
+    margin-top: 110px;
 }
 
 .grid-layout{
-    grid-template: 440px / repeat(3, 1fr);
+    display: grid;
+    grid-auto-rows: 440px;
+    grid-template: 440px / repeat(auto-fit, minmax(350px, 1fr));
+    gap: 35px;
 }
 
 .card{
+    display: block;
+    padding: 25px;
+    background-color: white;
+    color: #0F1217;
     max-width: 100%;
     overflow: hidden;
+    border: 1px solid #252930; 
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.card:hover{
+    transform: scale(105%) rotate(-1deg);
+}
+
+.card .content-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .main-data{
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.card h3, .card p{
+    margin: 0;
+}
+
+.card .main-data h3{
+    font-size: 19px;
+    margin-top: 33px;
+    line-height: normal;
+}
+
+.card .main-data p{
+    margin-top: 13px;
+    line-height: normal;
+}
+
+.card .featured-image{
+    border-radius: 25px;
+}
+
+.meta-data{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.dot{
+    --dot-size: 5px;
+    width: var(--dot-size);
+    height: var(--dot-size);
 }
