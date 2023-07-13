@@ -20,24 +20,6 @@ body{
     padding: 75px var(--body-side-padding);
 }
 
-@keyframes hide-fade {
-    from {opacity: 1;}
-    to {opacity: 0;}
-}
-
-@keyframes show-fade {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-.show-fade::after{
-    animation: show-fade 0.5s;
-}
-
-.hide-fade::after{
-    animation: hide-fade 0.5s;
-}
-
 .disable-after::after{
     display: none !important; 
 }
